@@ -1,0 +1,67 @@
+/*
+Error: Invalid CSS after "$theme_uri": expected selector or at-rule, was ": "https://gith..."
+        on line 4 of /home/ubuntu/workspace/wp-content/themes/mandala-heart/mandalaheartcss/sass/_vars.scss
+        from line 2 of /home/ubuntu/workspace/wp-content/themes/mandala-heart/mandalaheartcss/sass/style.sass
+
+1: // Theme Information
+2: //--------------------------------------------//
+3: $theme_name: "mandala-heart"
+4: $theme_uri: "https://github.com/tolkadot/mandala-heart"
+5: $theme_description: "Wordpress Theme dev - 2017"
+6: $theme_version: "1.0"
+7: $theme_author: "Dee Bryant"
+8: $theme_author_uri: "https://github.com/tolkadot/"
+9: $theme_license: "GPL"
+
+Backtrace:
+/home/ubuntu/workspace/wp-content/themes/mandala-heart/mandalaheartcss/sass/_vars.scss:4
+/home/ubuntu/workspace/wp-content/themes/mandala-heart/mandalaheartcss/sass/style.sass:2
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:1207:in `expected'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:1137:in `expected'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:42:in `parse'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:406:in `_to_tree'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:312:in `to_tree'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:326:in `block in visit_import'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:88:in `block in with_import'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:88:in `with_import'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:325:in `visit_import'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `map'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:159:in `visit'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/tree/root_node.rb:36:in `css_tree'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/tree/root_node.rb:20:in `render'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:281:in `render'
+/usr/local/rvm/gems/ruby-2.3.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
+/usr/local/rvm/gems/ruby-2.3.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
+/usr/local/rvm/gems/ruby-2.3.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `each'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:331:in `block in watch'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
+/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"$theme_uri\": expected selector or at-rule, was \": \"https://gith...\"\A         on line 4 of /home/ubuntu/workspace/wp-content/themes/mandala-heart/mandalaheartcss/sass/_vars.scss\A         from line 2 of /home/ubuntu/workspace/wp-content/themes/mandala-heart/mandalaheartcss/sass/style.sass\A \A 1: // Theme Information\A 2: //--------------------------------------------//\A 3: $theme_name: \"mandala-heart\"\A 4: $theme_uri: \"https://github.com/tolkadot/mandala-heart\"\A 5: $theme_description: \"Wordpress Theme dev - 2017\"\A 6: $theme_version: \"1.0\"\A 7: $theme_author: \"Dee Bryant\"\A 8: $theme_author_uri: \"https://github.com/tolkadot/\"\A 9: $theme_license: \"GPL\""; }
