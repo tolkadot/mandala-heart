@@ -1,67 +1,402 @@
-/*
-Error: Invalid CSS after "$theme_uri": expected selector or at-rule, was ": "https://gith..."
-        on line 4 of /home/ubuntu/workspace/wp-content/themes/mandala-heart/mandalaheartcss/sass/_vars.scss
-        from line 2 of /home/ubuntu/workspace/wp-content/themes/mandala-heart/mandalaheartcss/sass/style.sass
-
-1: // Theme Information
-2: //--------------------------------------------//
-3: $theme_name: "mandala-heart"
-4: $theme_uri: "https://github.com/tolkadot/mandala-heart"
-5: $theme_description: "Wordpress Theme dev - 2017"
-6: $theme_version: "1.0"
-7: $theme_author: "Dee Bryant"
-8: $theme_author_uri: "https://github.com/tolkadot/"
-9: $theme_license: "GPL"
-
-Backtrace:
-/home/ubuntu/workspace/wp-content/themes/mandala-heart/mandalaheartcss/sass/_vars.scss:4
-/home/ubuntu/workspace/wp-content/themes/mandala-heart/mandalaheartcss/sass/style.sass:2
-/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:1207:in `expected'
-/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:1137:in `expected'
-/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:42:in `parse'
-/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:406:in `_to_tree'
-/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:312:in `to_tree'
-/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:326:in `block in visit_import'
-/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:88:in `block in with_import'
-/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:88:in `with_import'
-/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:325:in `visit_import'
-/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
-/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
-/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `map'
-/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
-/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
-/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:159:in `visit'
-/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/tree/root_node.rb:36:in `css_tree'
-/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/tree/root_node.rb:20:in `render'
-/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:281:in `render'
-/usr/local/rvm/gems/ruby-2.3.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
-/usr/local/rvm/gems/ruby-2.3.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
-/usr/local/rvm/gems/ruby-2.3.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
-/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
-/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `each'
-/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
-/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:331:in `block in watch'
-/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
-/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
-/usr/local/rvm/gems/ruby-2.3.0/gems/sass-3.4.23/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+/*!
+ 
+Theme Name: mandala-heart
+Theme URI: https://github.com/tolkadot/mandala-heart
+Description: Wordpress Theme dev - 2017
+Version: 1.0
+Author: Dee Bryant
+Author URI: https://github.com/tolkadot/
+License: GPL
+License URI: License.txt
+Tags: responsive-layout, post-formats
+ 
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"$theme_uri\": expected selector or at-rule, was \": \"https://gith...\"\A         on line 4 of /home/ubuntu/workspace/wp-content/themes/mandala-heart/mandalaheartcss/sass/_vars.scss\A         from line 2 of /home/ubuntu/workspace/wp-content/themes/mandala-heart/mandalaheartcss/sass/style.sass\A \A 1: // Theme Information\A 2: //--------------------------------------------//\A 3: $theme_name: \"mandala-heart\"\A 4: $theme_uri: \"https://github.com/tolkadot/mandala-heart\"\A 5: $theme_description: \"Wordpress Theme dev - 2017\"\A 6: $theme_version: \"1.0\"\A 7: $theme_author: \"Dee Bryant\"\A 8: $theme_author_uri: \"https://github.com/tolkadot/\"\A 9: $theme_license: \"GPL\""; }
+/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
+/*! Normalize Sass v1.0.0 | MIT License | github.com/cyrildewit/normalize-sass */
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+/* line 33, mandalaheartcss/sass/base/_normalize.scss */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* line 42, mandalaheartcss/sass/base/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/* line 56, mandalaheartcss/sass/base/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/* line 72, mandalaheartcss/sass/base/_normalize.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+}
+
+/* line 80, mandalaheartcss/sass/base/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 86, mandalaheartcss/sass/base/_normalize.scss */
+progress {
+  vertical-align: baseline;
+}
+
+/* line 92, mandalaheartcss/sass/base/_normalize.scss */
+template,
+[hidden] {
+  display: none;
+}
+
+/* line 106, mandalaheartcss/sass/base/_normalize.scss */
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+/* line 112, mandalaheartcss/sass/base/_normalize.scss */
+a:active,
+a:hover {
+  outline-width: 0;
+}
+
+/* line 128, mandalaheartcss/sass/base/_normalize.scss */
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted;
+}
+
+/* line 135, mandalaheartcss/sass/base/_normalize.scss */
+b,
+strong {
+  font-weight: inherit;
+}
+
+/* line 141, mandalaheartcss/sass/base/_normalize.scss */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/* line 147, mandalaheartcss/sass/base/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 152, mandalaheartcss/sass/base/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* line 158, mandalaheartcss/sass/base/_normalize.scss */
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/* line 164, mandalaheartcss/sass/base/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/* line 169, mandalaheartcss/sass/base/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 177, mandalaheartcss/sass/base/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 181, mandalaheartcss/sass/base/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 193, mandalaheartcss/sass/base/_normalize.scss */
+img {
+  border-style: none;
+}
+
+/* line 198, mandalaheartcss/sass/base/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 211, mandalaheartcss/sass/base/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* line 220, mandalaheartcss/sass/base/_normalize.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/* line 226, mandalaheartcss/sass/base/_normalize.scss */
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+/* line 241, mandalaheartcss/sass/base/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font: inherit;
+  margin: 0;
+}
+
+/* line 253, mandalaheartcss/sass/base/_normalize.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/* line 259, mandalaheartcss/sass/base/_normalize.scss */
+button,
+input {
+  overflow: visible;
+}
+
+/* line 266, mandalaheartcss/sass/base/_normalize.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/* line 273, mandalaheartcss/sass/base/_normalize.scss */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/* line 281, mandalaheartcss/sass/base/_normalize.scss */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/* line 290, mandalaheartcss/sass/base/_normalize.scss */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/* line 298, mandalaheartcss/sass/base/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/* line 309, mandalaheartcss/sass/base/_normalize.scss */
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+/* line 319, mandalaheartcss/sass/base/_normalize.scss */
+textarea {
+  overflow: auto;
+}
+
+/* line 325, mandalaheartcss/sass/base/_normalize.scss */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* line 332, mandalaheartcss/sass/base/_normalize.scss */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/* line 339, mandalaheartcss/sass/base/_normalize.scss */
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+/* line 345, mandalaheartcss/sass/base/_normalize.scss */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 351, mandalaheartcss/sass/base/_normalize.scss */
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54;
+}
+
+/* line 358, mandalaheartcss/sass/base/_normalize.scss */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+/* line 15, mandalaheartcss/sass/_frontPage.sass */
+.front-page-container {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: "Open Sans";
+  height: 400px;
+  margin: 50px;
+}
+
+/* line 21, mandalaheartcss/sass/_frontPage.sass */
+.mandala-heart-text-area {
+  width: 60%;
+}
+
+/* line 24, mandalaheartcss/sass/_frontPage.sass */
+.mandala-heart-image-area {
+  width: 40%;
+}
+
+/* line 27, mandalaheartcss/sass/_frontPage.sass */
+.front-page-text-area, .front-page-image-area {
+  margin: 50px 50px 50px 50px;
+}
+
+/* line 30, mandalaheartcss/sass/_frontPage.sass */
+#mandala-heart-image, #about-mandala-image {
+  width: 60%;
+  display: block;
+  margin: auto;
+}
+
+/* line 35, mandalaheartcss/sass/_frontPage.sass */
+#mandala-heart, #mandalas {
+  background: #fafafa;
+}
+
+/* line 38, mandalaheartcss/sass/_frontPage.sass */
+#ahnna-profile-pic {
+  width: 60%;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+}
+
+/* line 25, mandalaheartcss/sass/style.sass */
+html, body {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+}
+
+/* line 29, mandalaheartcss/sass/style.sass */
+h1 {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+/* line 32, mandalaheartcss/sass/style.sass */
+.navigation-top {
+  border: none;
+}
+
+/* line 35, mandalaheartcss/sass/style.sass */
+.single-post:not(.has-sidebar) #primary, .page.page-one-column:not(.twentyseventeen-front-page) #primary, .archive.page-one-column:not(.has-sidebar) .page-header, .archive.page-one-column:not(.has-sidebar) #primary {
+  max-width: 1000px;
+}
+
+/* line 39, mandalaheartcss/sass/style.sass */
+.workshopsSplash {
+  width: 100%;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 1000px) {
+  /* line 39, mandalaheartcss/sass/style.sass */
+  .workshopsSplash {
+    flex-direction: row;
+  }
+}
+
+/* line 45, mandalaheartcss/sass/style.sass */
+.workshopGallery {
+  margin: 2%;
+  font-size: 16px;
+  position: relative;
+}
+/* line 49, mandalaheartcss/sass/style.sass */
+.workshopGallery .workshopImage {
+  position: relative;
+}
+/* line 51, mandalaheartcss/sass/style.sass */
+.workshopGallery .workshopImage span {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1%;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+@media (min-width: 48em) {
+  /* line 62, mandalaheartcss/sass/style.sass */
+  .wrap {
+    max-width: 1500px;
+  }
+}
+
+/* line 67, mandalaheartcss/sass/style.sass */
+.page-title-centered {
+  text-align: center;
+  font-size: 36px;
+}

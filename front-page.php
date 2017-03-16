@@ -17,37 +17,48 @@ get_header(); ?>
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
 
-		<?php // Show the selected frontpage content.
-		if ( have_posts() ) :
-			while ( have_posts() ) : the_post();
-				get_template_part( 'template-parts/page/content', 'front-page' );
-			endwhile;
-		else : // I'm not sure it's possible to have no posts when this page is shown, but WTH.
-			get_template_part( 'template-parts/post/content', 'none' );
-		endif; ?>
-
-		<?php
-		// Get each of our panels and show the post data.
-		if ( 0 !== twentyseventeen_panel_count() || is_customize_preview() ) : // If we have pages to show.
-
-			/**
-			 * Filter number of front page sections in Twenty Seventeen.
-			 *
-			 * @since Twenty Seventeen 1.0
-			 *
-			 * @param $num_sections integer
-			 */
-			$num_sections = apply_filters( 'twentyseventeen_front_page_sections', 4 );
-			global $twentyseventeencounter;
-
-			// Create a setting and control for each of the sections available in the theme.
-			for ( $i = 1; $i < ( 1 + $num_sections ); $i++ ) {
-				$twentyseventeencounter = $i;
-				twentyseventeen_front_page_section( null, $i );
-			}
-
-	endif; // The if ( 0 !== twentyseventeen_panel_count() ) ends here. ?>
-
+		<?php 
+		$mandalaHeartImage = get_field("mandala-heart-image");
+		$mandalaHeartText = get_field("mandala-heart-text");
+		$aboutAhnnaImage = get_field("about-ahnna-image");
+		$aboutAhnnaText = get_field("about-ahnna-text");
+		$mandalasImage = get_field("mandalas-image");
+		$mandalasText = get_field("mandalas-text");
+		 
+		?>
+		<section class ="front-page-section" id="mandala-heart" >
+			<div class="front-page-container">
+				<div class="mandala-heart-text-area front-page-text-area">
+					<?php echo $mandalaHeartText;?>
+				</div>
+				<div class="mandala-heart-image-area front-page-image-area">
+					<img id="mandala-heart-image" src="<?php echo $mandalaHeartImage['url']; ?> "/>
+				</div>
+			</div>
+		</section>
+		
+		<section class ="front-page-section" id="about-ahnna">
+			<div class="front-page-container">
+				<div class="mandala-heart-image-area front-page-image-area">
+					<img id="ahnna-profile-pic" src="<?php echo $aboutAhnnaImage['url']; ?> "/>
+				</div>
+				<div class="mandala-heart-text-area front-page-text-area">
+					<?php echo $aboutAhnnaText; ?>
+				</div>	
+			</div>
+		</section>
+		
+		<section class ="front-page-section" id="mandalas">	
+		<div class="front-page-container">
+				<div class="mandala-heart-text-area front-page-text-area">
+					<?php echo $mandalasText; ?>
+				</div>
+				<div class="mandala-heart-image-area front-page-image-area">
+					<img id="about-mandala-image"src="<?php echo $mandalasImage['url']; ?> "/>
+				</div>	
+			</div>
+		</section>
+		
 	</main><!-- #main -->
 </div><!-- #primary -->
 
