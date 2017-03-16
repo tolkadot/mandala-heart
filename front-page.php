@@ -26,6 +26,7 @@ get_header(); ?>
 		$mandalasText = get_field("mandalas-text");
 		 
 		?>
+		<div class=container>
 		<section class ="front-page-section" id="mandala-heart" >
 			<div class="front-page-container">
 				<div class="mandala-heart-text-area front-page-text-area">
@@ -49,7 +50,7 @@ get_header(); ?>
 		</section>
 		
 		<section class ="front-page-section" id="mandalas">	
-		<div class="front-page-container">
+		<div class="front-page-container front-page-container-end">
 				<div class="mandala-heart-text-area front-page-text-area">
 					<?php echo $mandalasText; ?>
 				</div>
@@ -58,6 +59,7 @@ get_header(); ?>
 				</div>	
 			</div>
 		</section>
+		</div>
 		
 	</main><!-- #main -->
 </div><!-- #primary -->

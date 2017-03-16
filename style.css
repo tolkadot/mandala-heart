@@ -295,33 +295,38 @@ textarea {
 }
 
 /* line 21, mandalaheartcss/sass/_frontPage.sass */
+.front-page-container-end {
+  margin-bottom: 0;
+}
+
+/* line 24, mandalaheartcss/sass/_frontPage.sass */
 .mandala-heart-text-area {
   width: 60%;
 }
 
-/* line 24, mandalaheartcss/sass/_frontPage.sass */
+/* line 27, mandalaheartcss/sass/_frontPage.sass */
 .mandala-heart-image-area {
   width: 40%;
 }
 
-/* line 27, mandalaheartcss/sass/_frontPage.sass */
+/* line 30, mandalaheartcss/sass/_frontPage.sass */
 .front-page-text-area, .front-page-image-area {
   margin: 50px 50px 50px 50px;
 }
 
-/* line 30, mandalaheartcss/sass/_frontPage.sass */
+/* line 33, mandalaheartcss/sass/_frontPage.sass */
 #mandala-heart-image, #about-mandala-image {
   width: 60%;
   display: block;
   margin: auto;
 }
 
-/* line 35, mandalaheartcss/sass/_frontPage.sass */
+/* line 38, mandalaheartcss/sass/_frontPage.sass */
 #mandala-heart, #mandalas {
   background: #fafafa;
 }
 
-/* line 38, mandalaheartcss/sass/_frontPage.sass */
+/* line 41, mandalaheartcss/sass/_frontPage.sass */
 #ahnna-profile-pic {
   width: 60%;
   border-radius: 50%;
@@ -329,28 +334,39 @@ textarea {
   margin: auto;
 }
 
-/* line 25, mandalaheartcss/sass/style.sass */
+/* line 1, mandalaheartcss/sass/_footer.sass */
+.site-footer {
+  border: none;
+  margin-top: 0;
+}
+
+/* line 1, mandalaheartcss/sass/_header.sass */
+.site-header {
+  background: white;
+}
+
+/* line 4, mandalaheartcss/sass/_header.sass */
+.navigation-top {
+  border: none;
+}
+
+/* line 27, mandalaheartcss/sass/style.sass */
 html, body {
   font-family: "Josefin Sans", sans-serif;
   font-size: 16px;
 }
 
-/* line 29, mandalaheartcss/sass/style.sass */
+/* line 31, mandalaheartcss/sass/style.sass */
 h1 {
   font-family: "Josefin Sans", sans-serif;
 }
 
-/* line 32, mandalaheartcss/sass/style.sass */
-.navigation-top {
-  border: none;
-}
-
-/* line 35, mandalaheartcss/sass/style.sass */
+/* line 34, mandalaheartcss/sass/style.sass */
 .single-post:not(.has-sidebar) #primary, .page.page-one-column:not(.twentyseventeen-front-page) #primary, .archive.page-one-column:not(.has-sidebar) .page-header, .archive.page-one-column:not(.has-sidebar) #primary {
   max-width: 1000px;
 }
 
-/* line 39, mandalaheartcss/sass/style.sass */
+/* line 38, mandalaheartcss/sass/style.sass */
 .workshopsSplash {
   width: 100%;
   display: -webkit-flex;
@@ -360,23 +376,23 @@ h1 {
   justify-content: center;
 }
 @media (min-width: 1000px) {
-  /* line 39, mandalaheartcss/sass/style.sass */
+  /* line 38, mandalaheartcss/sass/style.sass */
   .workshopsSplash {
     flex-direction: row;
   }
 }
 
-/* line 45, mandalaheartcss/sass/style.sass */
+/* line 44, mandalaheartcss/sass/style.sass */
 .workshopGallery {
   margin: 2%;
   font-size: 16px;
   position: relative;
 }
-/* line 49, mandalaheartcss/sass/style.sass */
+/* line 48, mandalaheartcss/sass/style.sass */
 .workshopGallery .workshopImage {
   position: relative;
 }
-/* line 51, mandalaheartcss/sass/style.sass */
+/* line 50, mandalaheartcss/sass/style.sass */
 .workshopGallery .workshopImage span {
   display: block;
   position: absolute;
@@ -389,13 +405,13 @@ h1 {
 }
 
 @media (min-width: 48em) {
-  /* line 62, mandalaheartcss/sass/style.sass */
+  /* line 61, mandalaheartcss/sass/style.sass */
   .wrap {
     max-width: 1500px;
   }
 }
 
-/* line 67, mandalaheartcss/sass/style.sass */
+/* line 66, mandalaheartcss/sass/style.sass */
 .page-title-centered {
   text-align: center;
   font-size: 36px;

@@ -14,5 +14,43 @@ function tolka_enqueue_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'tolka_enqueue_styles' );
 
+function footer_customize_register( $wp_customize ) 
+{
+    $wp_customize->add_section( 'footer_new_section_name' , array(
+        'title'    => __( 'Contact Details', 'starter' ),
+        'priority' => 30
+    ) );   
+ 
+ // Email Address
+ $wp_customize->add_setting('email_address', array(
+ 'default' => '',
+ 'type' => 'option',
+ 'capability' => 'edit_theme_options',
+ ));
+
+ $wp_customize->add_control('email_address', array(
+ 'label' => __('Email', footer_links_title),
+ 'section' => 'footer_new_section_name',
+ 'type' => 'option',
+ 'priority' => 5,
+ 'settings' => 'email_address'
+ ));
+ // Phone Number
+ $wp_customize->add_setting('phone_number', array(
+ 'default' => '',
+ 'type' => 'option',
+ 'capability' => 'edit_theme_options',
+ ));
+
+ $wp_customize->add_control('phone_number', array(
+ 'label' => __('Phone Number', footer_links_title),
+ 'section' => 'footer_new_section_name',
+ 'type' => 'option',
+ 'priority' => 5,
+ 'settings' => 'phone_number'
+ ));
+  
+}
+add_action( 'customize_register', 'footer_customize_register');
 
 ?>
