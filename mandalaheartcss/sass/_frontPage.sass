@@ -12,30 +12,40 @@
     align-items: center
     justify-content: center
 
-.front-page-container
+.front-page-container, .workshops-container
     +makeFlexRow
     font-family: $copy-font
     height: 400px
     margin: 50px
     
+.workshops-container
+    margin: 5px 50px 5px 50px
+    height: 550px
+    
+.workshops-section
+    margin-top: 30px
+    
+.workshops-container_2, .workshops-container_4
+    flex-direction: row-reverse
+    
 .front-page-container-end
     margin-bottom: 0
 
-.mandala-heart-text-area
+.mandala-heart-text-area, .workshops-text-area
     width: 60%
     
-.mandala-heart-image-area
+.mandala-heart-image-area, .workshops-page-image-area
     width: 40%
 
-.front-page-text-area, .front-page-image-area
+.front-page-text-area, .front-page-image-area, .workshops-text-area,  .workshops-page-image-area
     margin: 50px 50px 50px 50px
 
-#mandala-heart-image, #about-mandala-image
+#mandala-heart-image, #about-mandala-image, .workshop_image
     width: 60%
     display: block
     margin: auto
     
-#mandala-heart, #mandalas
+#mandala-heart, #mandalas, #section_1, #section_3, #section_5
     background: #fafafa
 
 #ahnna-profile-pic
@@ -43,3 +53,26 @@
     border-radius: 50%
     display: block
     margin: auto
+    
+.workshop-title
+    text-align: center
+    padding-top: 2%
+    
+.workshops-text-area, .workshops-page-image-area
+    align-self: flex-start
+    
+.wp_accept_pp_button_form
+    +makeFlexColumn
+    padding: 10px 10px 10px 0px
+    align-items: center
+    justify-content: center
+    font-family: $copy-font
+
+.wp_pp_button_selection_section, .wp_pp_button_reference_section, .wp_pp_button_submit_btn
+    margin: 1%
+    
+.wp_pp_button_selection_section, .wp_pp_button_reference_section, .wp_pp_button_submit_btn
+    font-family: $main-font
+
+div.wp_pp_button_reference_section  br
+    display: none
