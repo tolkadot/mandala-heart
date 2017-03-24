@@ -1,4 +1,5 @@
 //FRONT PAGE STYLES
+@import "breakpoint"
 
 =makeFlexRow
     @include display_flex
@@ -13,46 +14,79 @@
     justify-content: center
 
 .front-page-container, .workshops-container
-    +makeFlexRow
     font-family: $copy-font
-    height: 400px
-    margin: 50px
+    @include breakpoint($phone)
+        flex-direction: column
+        //height: 400px
+        margin: 2%
+    @include breakpoint($largeScreen)
+        +makeFlexRow
+        //height: 400px
+        margin: 50px
+        
+.front-page-container-ahnna
+    @include breakpoint($largeScreen)
+        flex-direction: row-reverse
+    
     
 .workshops-container
-    margin: 5px 50px 5px 50px
-    height: 550px
+    margin: .5%
+    @include breakpoint($largeScreen)
+        //height: 550px
+        margin: 5px 50px 5px 50px
     
 .workshops-section
     margin-top: 30px
     
 .workshops-container_2, .workshops-container_4
-    flex-direction: row-reverse
+    @include breakpoint($largeScreen)
+        flex-direction: row-reverse
     
 .front-page-container-end
     margin-bottom: 0
 
 .mandala-heart-text-area, .workshops-text-area
-    width: 60%
+    width: 100%
+    @include breakpoint($largeScreen)
+        width: 60%
     
 .mandala-heart-image-area, .workshops-page-image-area
-    width: 40%
+    width: 100%
+    margin: .5%
+    @include breakpoint($largeScreen)
+        width: 40%
 
-.front-page-text-area, .front-page-image-area, .workshops-text-area,  .workshops-page-image-area
-    margin: 50px 50px 50px 50px
+.workshops-text-area,  .workshops-page-image-area
+    margin: .5%
+    font-size: $main-font-size/1.2
+    @include breakpoint($largeScreen)
+        margin: 50px 50px 50px 50px
+        font-size: $main-font-size
+
+.front-page-text-area, .front-page-image-area,
+    margin: 2%
+    font-size: $main-font-size/1.2 
+    @include breakpoint($largeScreen)
+        font-size: $main-font-size
 
 #mandala-heart-image, #about-mandala-image, .workshop_image
-    width: 60%
     display: block
-    margin: auto
+    margin: 5% auto
+    width: 100%
+    @include breakpoint($largeScreen)
+        width: 60%
+        margin: auto
     
 #mandala-heart, #mandalas, #section_1, #section_3, #section_5
     background: #fafafa
 
 #ahnna-profile-pic
-    width: 60%
+    width: 100%
     border-radius: 50%
     display: block
     margin: auto
+    @include breakpoint($largeScreen)
+        width: 60%
     
 .workshop-title
     text-align: center
@@ -76,3 +110,29 @@
 
 div.wp_pp_button_reference_section  br
     display: none
+    
+//WORKSHOPS
+.workshopsSplash
+    width: $containerWidth
+    +makeFlexColumn
+    display: none
+    @include breakpoint($largeScreen)
+        display: flex
+        flex-direction: row
+
+.workshopGallery
+    margin: 2%
+    font-size: $main-font-size
+    position: relative
+    .workshopImage
+        position: relative
+        span 
+            display: block
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            padding: 1%
+            background: rgba(255,255,255,.8)
+        

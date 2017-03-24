@@ -282,86 +282,157 @@ textarea {
   font: inherit;
 }
 
-/* line 15, mandalaheartcss/sass/_frontPage.sass */
+/* line 16, mandalaheartcss/sass/_frontPage.sass */
 .front-page-container, .workshops-container {
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   font-family: "Open Sans";
-  height: 400px;
-  margin: 50px;
+}
+@media (min-width: 426px) {
+  /* line 16, mandalaheartcss/sass/_frontPage.sass */
+  .front-page-container, .workshops-container {
+    flex-direction: column;
+    margin: 2%;
+  }
+}
+@media (min-width: 1000px) {
+  /* line 16, mandalaheartcss/sass/_frontPage.sass */
+  .front-page-container, .workshops-container {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+  }
 }
 
-/* line 21, mandalaheartcss/sass/_frontPage.sass */
+@media (min-width: 1000px) {
+  /* line 27, mandalaheartcss/sass/_frontPage.sass */
+  .front-page-container-ahnna {
+    flex-direction: row-reverse;
+  }
+}
+
+/* line 32, mandalaheartcss/sass/_frontPage.sass */
 .workshops-container {
-  margin: 5px 50px 5px 50px;
-  height: 550px;
+  margin: 0.5%;
+}
+@media (min-width: 1000px) {
+  /* line 32, mandalaheartcss/sass/_frontPage.sass */
+  .workshops-container {
+    margin: 5px 50px 5px 50px;
+  }
 }
 
-/* line 25, mandalaheartcss/sass/_frontPage.sass */
+/* line 38, mandalaheartcss/sass/_frontPage.sass */
 .workshops-section {
   margin-top: 30px;
 }
 
-/* line 28, mandalaheartcss/sass/_frontPage.sass */
-.workshops-container_2, .workshops-container_4 {
-  flex-direction: row-reverse;
+@media (min-width: 1000px) {
+  /* line 41, mandalaheartcss/sass/_frontPage.sass */
+  .workshops-container_2, .workshops-container_4 {
+    flex-direction: row-reverse;
+  }
 }
 
-/* line 31, mandalaheartcss/sass/_frontPage.sass */
+/* line 45, mandalaheartcss/sass/_frontPage.sass */
 .front-page-container-end {
   margin-bottom: 0;
 }
 
-/* line 34, mandalaheartcss/sass/_frontPage.sass */
-.mandala-heart-text-area, .workshops-text-area {
-  width: 60%;
-}
-
-/* line 37, mandalaheartcss/sass/_frontPage.sass */
-.mandala-heart-image-area, .workshops-page-image-area {
-  width: 40%;
-}
-
-/* line 40, mandalaheartcss/sass/_frontPage.sass */
-.front-page-text-area, .front-page-image-area, .workshops-text-area, .workshops-page-image-area {
-  margin: 50px 50px 50px 50px;
-}
-
-/* line 43, mandalaheartcss/sass/_frontPage.sass */
-#mandala-heart-image, #about-mandala-image, .workshop_image {
-  width: 60%;
-  display: block;
-  margin: auto;
-}
-
 /* line 48, mandalaheartcss/sass/_frontPage.sass */
+.mandala-heart-text-area, .workshops-text-area {
+  width: 100%;
+}
+@media (min-width: 1000px) {
+  /* line 48, mandalaheartcss/sass/_frontPage.sass */
+  .mandala-heart-text-area, .workshops-text-area {
+    width: 60%;
+  }
+}
+
+/* line 53, mandalaheartcss/sass/_frontPage.sass */
+.mandala-heart-image-area, .workshops-page-image-area {
+  width: 100%;
+  margin: 0.5%;
+}
+@media (min-width: 1000px) {
+  /* line 53, mandalaheartcss/sass/_frontPage.sass */
+  .mandala-heart-image-area, .workshops-page-image-area {
+    width: 40%;
+  }
+}
+
+/* line 59, mandalaheartcss/sass/_frontPage.sass */
+.workshops-text-area, .workshops-page-image-area {
+  margin: 0.5%;
+  font-size: 13.33333px;
+}
+@media (min-width: 1000px) {
+  /* line 59, mandalaheartcss/sass/_frontPage.sass */
+  .workshops-text-area, .workshops-page-image-area {
+    margin: 50px 50px 50px 50px;
+    font-size: 16px;
+  }
+}
+
+/* line 66, mandalaheartcss/sass/_frontPage.sass */
+.front-page-text-area, .front-page-image-area {
+  margin: 2%;
+  font-size: 13.33333px;
+}
+@media (min-width: 1000px) {
+  /* line 66, mandalaheartcss/sass/_frontPage.sass */
+  .front-page-text-area, .front-page-image-area {
+    font-size: 16px;
+  }
+}
+
+/* line 72, mandalaheartcss/sass/_frontPage.sass */
+#mandala-heart-image, #about-mandala-image, .workshop_image {
+  display: block;
+  margin: 5% auto;
+  width: 100%;
+}
+@media (min-width: 1000px) {
+  /* line 72, mandalaheartcss/sass/_frontPage.sass */
+  #mandala-heart-image, #about-mandala-image, .workshop_image {
+    width: 60%;
+    margin: auto;
+  }
+}
+
+/* line 80, mandalaheartcss/sass/_frontPage.sass */
 #mandala-heart, #mandalas, #section_1, #section_3, #section_5 {
   background: #fafafa;
 }
 
-/* line 51, mandalaheartcss/sass/_frontPage.sass */
+/* line 83, mandalaheartcss/sass/_frontPage.sass */
 #ahnna-profile-pic {
-  width: 60%;
+  width: 100%;
   border-radius: 50%;
   display: block;
   margin: auto;
 }
+@media (min-width: 1000px) {
+  /* line 83, mandalaheartcss/sass/_frontPage.sass */
+  #ahnna-profile-pic {
+    width: 60%;
+  }
+}
 
-/* line 57, mandalaheartcss/sass/_frontPage.sass */
+/* line 91, mandalaheartcss/sass/_frontPage.sass */
 .workshop-title {
   text-align: center;
   padding-top: 2%;
 }
 
-/* line 61, mandalaheartcss/sass/_frontPage.sass */
+/* line 95, mandalaheartcss/sass/_frontPage.sass */
 .workshops-text-area, .workshops-page-image-area {
   align-self: flex-start;
 }
 
-/* line 64, mandalaheartcss/sass/_frontPage.sass */
+/* line 98, mandalaheartcss/sass/_frontPage.sass */
 .wp_accept_pp_button_form {
   display: -webkit-flex;
   display: flex;
@@ -374,52 +445,95 @@ textarea {
   font-family: "Open Sans";
 }
 
-/* line 71, mandalaheartcss/sass/_frontPage.sass */
+/* line 105, mandalaheartcss/sass/_frontPage.sass */
 .wp_pp_button_selection_section, .wp_pp_button_reference_section, .wp_pp_button_submit_btn {
   margin: 1%;
 }
 
-/* line 74, mandalaheartcss/sass/_frontPage.sass */
+/* line 108, mandalaheartcss/sass/_frontPage.sass */
 .wp_pp_button_selection_section, .wp_pp_button_reference_section, .wp_pp_button_submit_btn {
   font-family: "Josefin Sans", sans-serif;
 }
 
-/* line 77, mandalaheartcss/sass/_frontPage.sass */
+/* line 111, mandalaheartcss/sass/_frontPage.sass */
 div.wp_pp_button_reference_section br {
   display: none;
 }
 
-/* line 3, mandalaheartcss/sass/_general.sass */
-.entry-header {
+/* line 115, mandalaheartcss/sass/_frontPage.sass */
+.workshopsSplash {
+  width: 100%;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   display: none;
 }
+@media (min-width: 1000px) {
+  /* line 115, mandalaheartcss/sass/_frontPage.sass */
+  .workshopsSplash {
+    display: flex;
+    flex-direction: row;
+  }
+}
 
-/* line 2, mandalaheartcss/sass/_testimonials.sass */
+/* line 123, mandalaheartcss/sass/_frontPage.sass */
+.workshopGallery {
+  margin: 2%;
+  font-size: 16px;
+  position: relative;
+}
+/* line 127, mandalaheartcss/sass/_frontPage.sass */
+.workshopGallery .workshopImage {
+  position: relative;
+}
+/* line 129, mandalaheartcss/sass/_frontPage.sass */
+.workshopGallery .workshopImage span {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1%;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+/* line 5, mandalaheartcss/sass/_testimonials.sass */
 .testimonial-text {
-  width: 70%;
+  width: 90%;
   margin: auto;
-  font-size: 24px;
+  font-size: 16px;
   font-style: italic;
 }
-/* line 7, mandalaheartcss/sass/_testimonials.sass */
+/* line 10, mandalaheartcss/sass/_testimonials.sass */
 .testimonial-text:before {
   content: '"';
 }
-/* line 9, mandalaheartcss/sass/_testimonials.sass */
+/* line 12, mandalaheartcss/sass/_testimonials.sass */
 .testimonial-text:after {
   content: '"';
 }
+@media (min-width: 768px) {
+  /* line 5, mandalaheartcss/sass/_testimonials.sass */
+  .testimonial-text {
+    width: 70%;
+    margin: auto;
+    font-size: 24px;
+  }
+}
 
-/* line 12, mandalaheartcss/sass/_testimonials.sass */
+/* line 20, mandalaheartcss/sass/_testimonials.sass */
 .testimonial-author {
   width: 70%;
   margin: auto;
   text-align: right;
 }
 
-/* line 17, mandalaheartcss/sass/_testimonials.sass */
+/* line 25, mandalaheartcss/sass/_testimonials.sass */
 .testimonial-section {
-  margin: 2%;
+  margin: 4% 2%;
 }
 
 /* line 1, mandalaheartcss/sass/_footer.sass */
@@ -428,14 +542,53 @@ div.wp_pp_button_reference_section br {
   margin-top: 0;
 }
 
-/* line 1, mandalaheartcss/sass/_header.sass */
+/* line 15, mandalaheartcss/sass/_header.sass */
 .site-header {
   background: white;
 }
 
-/* line 4, mandalaheartcss/sass/_header.sass */
+/* line 18, mandalaheartcss/sass/_header.sass */
 .navigation-top {
   border: none;
+}
+
+/* line 21, mandalaheartcss/sass/_header.sass */
+.header-wrapper {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 24, mandalaheartcss/sass/_header.sass */
+.custom-logo-link img, .custom-logo-link {
+  max-height: 400px !important;
+}
+
+/* line 27, mandalaheartcss/sass/_header.sass */
+#top-menu {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  /* line 27, mandalaheartcss/sass/_header.sass */
+  #top-menu {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 1000px) {
+  /* line 32, mandalaheartcss/sass/_header.sass */
+  .site-title {
+    font-size: 3em;
+  }
+}
+
+@media (min-width: 1000px) {
+  /* line 36, mandalaheartcss/sass/_header.sass */
+  .logo {
+    padding-right: 100px;
+  }
 }
 
 /* line 29, mandalaheartcss/sass/style.sass */
@@ -454,53 +607,43 @@ h1 {
   max-width: 1000px;
 }
 
-/* line 40, mandalaheartcss/sass/style.sass */
-.workshopsSplash {
-  width: 100%;
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-@media (min-width: 1000px) {
-  /* line 40, mandalaheartcss/sass/style.sass */
-  .workshopsSplash {
-    flex-direction: row;
-  }
-}
-
-/* line 46, mandalaheartcss/sass/style.sass */
-.workshopGallery {
-  margin: 2%;
-  font-size: 16px;
-  position: relative;
-}
-/* line 50, mandalaheartcss/sass/style.sass */
-.workshopGallery .workshopImage {
-  position: relative;
-}
-/* line 52, mandalaheartcss/sass/style.sass */
-.workshopGallery .workshopImage span {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 1%;
-  background: rgba(255, 255, 255, 0.8);
-}
-
 @media (min-width: 48em) {
-  /* line 63, mandalaheartcss/sass/style.sass */
+  /* line 40, mandalaheartcss/sass/style.sass */
   .wrap {
     max-width: 1500px;
+    padding: 0em 1em;
+    width: 100%;
+    max-width: 2000px;
   }
 }
 
-/* line 68, mandalaheartcss/sass/style.sass */
+/* line 48, mandalaheartcss/sass/style.sass */
 .page-title-centered {
   text-align: center;
-  font-size: 36px;
+  font-size: 20px;
+}
+@media (min-width: 768px) {
+  /* line 48, mandalaheartcss/sass/style.sass */
+  .page-title-centered {
+    font-size: 24px;
+  }
+}
+@media (min-width: 1000px) {
+  /* line 48, mandalaheartcss/sass/style.sass */
+  .page-title-centered {
+    font-size: 36px;
+  }
+}
+
+/* line 56, mandalaheartcss/sass/style.sass */
+.entry-header {
+  display: none;
+}
+
+/* line 60, mandalaheartcss/sass/style.sass */
+.custom-logo-link img, .custom-logo-link {
+  display: block;
+  margin: auto;
+  max-height: 200px;
+  padding-bottom: 2%;
 }

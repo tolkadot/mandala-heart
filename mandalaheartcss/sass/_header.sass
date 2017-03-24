@@ -1,5 +1,38 @@
+@import "breakpoint"
+
+=makeFlexRow
+    @include display_flex
+    flex-direction: row
+    align-items: center
+    justify-content: center
+    
+=makeFlexColumn
+    @include display_flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+
 .site-header
     background: white
     
 .navigation-top
     border: none
+
+.header-wrapper
+    +makeFlexRow
+
+.custom-logo-link img, .custom-logo-link
+    max-height: 400px !important
+
+#top-menu
+    text-align: center
+    @include breakpoint($smallScreen)
+        font-size: 1.5em
+
+.site-title
+    @include breakpoint($largeScreen)
+        font-size: 3em
+
+.logo
+    @include breakpoint($largeScreen)
+        padding-right: 100px
