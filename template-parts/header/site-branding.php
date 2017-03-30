@@ -12,7 +12,12 @@
 <div class="site-branding">
 	<div class="wrap">
 <div class="header-wrapper">
-	<div class="logo">	<?php the_custom_logo(); ?></div>
+	<?php if(is_front_page()){ ?>
+			<div class="logo">	<?php the_custom_logo(); ?></div>
+			<?php } 
+		else {?>
+			<div class="logo-normal-page">	<?php the_custom_logo(); ?></div>
+			<?php }  ?>
 
 <div class="new">
 		<div class="site-branding-text">

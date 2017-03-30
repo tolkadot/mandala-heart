@@ -53,4 +53,25 @@ function footer_customize_register( $wp_customize )
 }
 add_action( 'customize_register', 'footer_customize_register');
 
+add_filter( 'get_custom_logo', 'change_logo_class' );
+
+
+
+function change_logo_class( $html ) {
+    if(is_front_page()){
+
+    $html = str_replace( 'custom-logo', 'your-custom-class', $html );
+    $html = str_replace( 'custom-logo-link', 'your-custom-class', $html );
+  
+    return $html;
+    }
+    else { 
+        $html = str_replace( 'custom-logo', 'my-custom-class', $html );
+        $html = str_replace( 'custom-logo-link', 'my-custom-class', $html );
+  
+            return $html;
+    }
+    
+}
+
 ?>
